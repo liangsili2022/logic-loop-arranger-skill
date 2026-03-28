@@ -172,4 +172,5 @@ If you need bundled resources:
 - read [references/accompaniment-workflow.md](references/accompaniment-workflow.md) for process and heuristics
 - read [references/intake-patterns.md](references/intake-patterns.md) for question framing
 - read [references/logic-automation-limits.md](references/logic-automation-limits.md) before UI scripting inside Logic Pro
-
+- use [scripts/create_producer_brief.py](scripts/create_producer_brief.py) when you want to turn a locked direction into a reusable brief artifact
+- use [examples/example-briefs.md](examples/example-briefs.md) when you need sample direction patterns or example outcomes
