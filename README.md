@@ -1,5 +1,10 @@
 # Logic Loop Arranger
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+![Platform](https://img.shields.io/badge/platform-macOS-lightgrey)
+![Focus](https://img.shields.io/badge/focus-Logic%20Pro%20%2B%20Apple%20Loops-blue)
+![Scope](https://img.shields.io/badge/scope-accompaniment%20only-purple)
+
 `Logic Loop Arranger` is an open-source Codex skill for creating accompaniment in Logic Pro with Apple Loops.
 
 It is designed to act less like a generic assistant and more like a top-tier music producer:
@@ -15,6 +20,10 @@ It does not target:
 - topline melody writing
 - vocal synthesis
 - deep plugin automation inside Logic Pro
+
+## Screenshot
+
+![Logic Loop Arranger workflow screenshot](./assets/logic-current.png)
 
 ## Why this exists
 
@@ -56,6 +65,32 @@ The skill should feel like a Grammy-level producer in the room:
 - focused on narrowing direction before touching production
 
 The interaction style matters as much as the technical steps.
+
+## Why not deep Logic automation?
+
+Because Logic Pro is a great finishing environment, but not a strong external automation target.
+
+In practice, what works reliably is:
+- preparing files outside Logic
+- opening projects or assets
+- importing audio or MIDI
+- handling simple prompts such as sample-rate dialogs
+- using Logic as the place where the creator listens, edits, arranges, and finishes
+
+What does not work reliably as a public promise:
+- full project authoring through a stable external API
+- deterministic chord-track population from outside the app
+- deep plugin routing or editing via UI scripting
+- robust end-to-end DAW control that behaves like a real SDK
+
+That is why this skill is intentionally designed around:
+- creative intake
+- producer-style direction
+- accompaniment decisions
+- clean asset preparation
+- Logic-friendly handoff
+
+Instead of pretending that Logic offers a full agent-ready automation surface.
 
 ## Who it is for
 
