@@ -12,6 +12,7 @@ This project follows a lightweight changelog format while it is pre-1.0.
 - GitHub issue and pull request templates.
 - CI workflow for Python compile checks and unit tests.
 - Unit test coverage for the producer brief helper.
+- Genre-specific example briefs for singer-songwriter, sync-bed, trap-pop, and upbeat pop/R&B accompaniment workflows.
 
 ### Changed
 
