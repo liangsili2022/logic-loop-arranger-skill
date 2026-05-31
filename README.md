@@ -1,6 +1,7 @@
 # Logic Loop Arranger
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+![CI](https://github.com/liangsili2022/logic-loop-arranger-skill/actions/workflows/ci.yml/badge.svg)
 ![Platform](https://img.shields.io/badge/platform-macOS-lightgrey)
 ![Focus](https://img.shields.io/badge/focus-Logic%20Pro%20%2B%20Apple%20Loops-blue)
 ![Scope](https://img.shields.io/badge/scope-accompaniment%20only-purple)
@@ -20,6 +21,18 @@ It does not target:
 - topline melody writing
 - vocal synthesis
 - deep plugin automation inside Logic Pro
+
+## Project status
+
+This project is an early, focused OSS skill rather than a full DAW automation toolkit.
+
+The stable surface today is:
+- the Codex skill definition in [SKILL.md](SKILL.md)
+- producer-intake and arrangement references
+- repeatable producer-brief generation through [scripts/create_producer_brief.py](scripts/create_producer_brief.py)
+- documentation for realistic Logic Pro handoff boundaries
+
+The next maturity target is to grow this into a small, well-tested skill package with more genre examples, packaging helpers, and maintainer-friendly issue triage.
 
 ## Screenshot
 
@@ -103,6 +116,10 @@ Instead of pretending that Logic offers a full agent-ready automation surface.
 
 ```text
 logic-loop-arranger-skill/
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   ├── PULL_REQUEST_TEMPLATE.md
+│   └── workflows/
 ├── SKILL.md
 ├── agents/
 │   └── openai.yaml
@@ -114,7 +131,15 @@ logic-loop-arranger-skill/
 │   └── logic-automation-limits.md
 ├── scripts/
 │   └── create_producer_brief.py
+├── tests/
+│   └── test_create_producer_brief.py
+├── CHANGELOG.md
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
 ├── LICENSE
+├── PROMOTION.md
+├── ROADMAP.md
+├── SECURITY.md
 ├── .gitignore
 └── README.md
 ```
@@ -124,6 +149,7 @@ logic-loop-arranger-skill/
 Copy this folder into your Codex skills directory:
 
 ```bash
+mkdir -p "$CODEX_HOME/skills"
 cp -R logic-loop-arranger-skill "$CODEX_HOME/skills/"
 ```
 
@@ -143,6 +169,34 @@ Examples of the kinds of prompts this skill should handle well:
 - “Expand this Apple Loops beat into a full song structure and prep stems for Logic.”
 
 For sample creative briefs, see [examples/example-briefs.md](examples/example-briefs.md).
+
+## Producer brief helper
+
+The repository includes a small standard-library Python helper for creating a reusable production brief:
+
+```bash
+python3 scripts/create_producer_brief.py \
+  --title "Night Drive Demo" \
+  --style "contemporary alt-R&B accompaniment" \
+  --mood "late-night, intimate, unresolved" \
+  --references "SZA, Brent Faiyaz" \
+  --tempo "92-98 BPM" \
+  --key "D minor" \
+  --harmony "moody minor loop with restrained lift" \
+  --palette "soft drums, warm keys, sub bass, sparse texture" \
+  --finish "songwriting demo" \
+  --deliverable "stereo WAV, stems, and Logic import notes" \
+  --out producer-brief.txt
+```
+
+## Development checks
+
+Run the local checks before opening a pull request:
+
+```bash
+python3 -m compileall scripts tests
+python3 -m unittest discover -s tests
+```
 
 ## Bundled assets
 
@@ -182,10 +236,17 @@ It is not yet a full automation toolkit for authoring Logic sessions.
 
 ## Roadmap ideas
 
-- more example briefs across genres
-- helper scripts for delivery note generation
-- optional packaging templates for stems and Logic prep
-- a stronger public prompt library for producer-style intake
+See [ROADMAP.md](ROADMAP.md).
+
+## Contributing
+
+Contributions are welcome when they keep the project focused on accompaniment workflows and honest Logic Pro boundaries.
+
+Start with [CONTRIBUTING.md](CONTRIBUTING.md), then use the issue templates for bug reports, workflow gaps, and feature proposals.
+
+For responsible public sharing, see [PROMOTION.md](PROMOTION.md).
+
+For vulnerability or safety-related reports, see [SECURITY.md](SECURITY.md).
 
 ## License
 

@@ -1,0 +1,38 @@
+name: Feature request
+description: Suggest a focused improvement to the accompaniment workflow.
+title: "Feature: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Workflow gap
+      description: What accompaniment or maintainer workflow is hard today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the smallest useful improvement.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Creative intake
+        - Arrangement workflow
+        - Logic handoff
+        - Helper script
+        - Documentation
+        - Tests or CI
+    validations:
+      required: true
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: Scope boundaries
+      description: Note anything this feature should deliberately avoid.
