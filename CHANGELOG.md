@@ -6,6 +6,10 @@ This project follows a lightweight changelog format while it is pre-1.0.
 
 ## Unreleased
 
+No unreleased changes yet.
+
+## 0.2.0 - 2026-06-01
+
 ### Added
 
 - Contribution guide, security policy, code of conduct, roadmap, and promotion guide.
