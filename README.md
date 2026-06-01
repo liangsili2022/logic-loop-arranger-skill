@@ -31,6 +31,7 @@ The stable surface today is:
 - producer-intake and arrangement references
 - repeatable producer-brief generation through [scripts/create_producer_brief.py](scripts/create_producer_brief.py)
 - repeatable Logic handoff notes through [scripts/create_delivery_notes.py](scripts/create_delivery_notes.py)
+- stem package preparation guidance in [references/stem-package-checklist.md](references/stem-package-checklist.md)
 - documentation for realistic Logic Pro handoff boundaries
 
 The next maturity target is to grow this into a small, well-tested skill package with more genre examples, packaging helpers, and maintainer-friendly issue triage.
@@ -129,7 +130,8 @@ logic-loop-arranger-skill/
 ├── references/
 │   ├── accompaniment-workflow.md
 │   ├── intake-patterns.md
-│   └── logic-automation-limits.md
+│   ├── logic-automation-limits.md
+│   └── stem-package-checklist.md
 ├── scripts/
 │   ├── create_delivery_notes.py
 │   └── create_producer_brief.py
@@ -137,7 +139,8 @@ logic-loop-arranger-skill/
 │   ├── test_create_delivery_notes.py
 │   ├── test_create_producer_brief.py
 │   ├── test_example_briefs.py
-│   └── test_repository_metadata.py
+│   ├── test_repository_metadata.py
+│   └── test_stem_package_checklist.py
 ├── CHANGELOG.md
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
@@ -243,6 +246,9 @@ The repository includes the standard OSS project docs expected by contributors a
 
 - [references/logic-automation-limits.md](references/logic-automation-limits.md)
   Honest guidance on what Logic Pro can and cannot be automated reliably
+
+- [references/stem-package-checklist.md](references/stem-package-checklist.md)
+  Practical checklist for aligned stems, naming, source loops, arrangement maps, and Logic-ready handoff checks
 
 ### Script
 

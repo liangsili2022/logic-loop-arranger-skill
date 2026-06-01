@@ -48,6 +48,7 @@ class RepositoryMetadataTest(unittest.TestCase):
             "test_create_producer_brief.py",
             "test_example_briefs.py",
             "test_repository_metadata.py",
+            "test_stem_package_checklist.py",
         ]
 
         for entry in expected_test_entries:

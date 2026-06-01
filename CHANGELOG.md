@@ -15,6 +15,7 @@ This project follows a lightweight changelog format while it is pre-1.0.
 - Genre-specific example briefs for singer-songwriter, sync-bed, trap-pop, and upbeat pop/R&B accompaniment workflows.
 - Repository metadata tests that verify expected OSS docs exist and stay linked from the README.
 - Logic delivery notes helper for stem naming, section maps, import notes, and automation boundaries.
+- Stem package checklist for aligned exports, naming, source loop references, arrangement maps, and Logic handoff checks.
 
 ### Changed
 

@@ -6,7 +6,7 @@ This roadmap keeps the project focused on practical accompaniment work rather th
 
 - Add more example briefs across pop, R&B, hip-hop, singer-songwriter, and sync-bed use cases.
 - Expand delivery-notes templates for more handoff formats.
-- Add a stem package checklist template.
+- Expand stem package checklist examples for more delivery contexts.
 - Improve tests around generated brief formatting.
 - Add GitHub topics and a clearer repository description.
 
