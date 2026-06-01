@@ -14,6 +14,7 @@ This project follows a lightweight changelog format while it is pre-1.0.
 - Unit test coverage for the producer brief helper.
 - Genre-specific example briefs for singer-songwriter, sync-bed, trap-pop, and upbeat pop/R&B accompaniment workflows.
 - Repository metadata tests that verify expected OSS docs exist and stay linked from the README.
+- Logic delivery notes helper for stem naming, section maps, import notes, and automation boundaries.
 
 ### Changed
 

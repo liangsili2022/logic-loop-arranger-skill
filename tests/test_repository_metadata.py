@@ -44,6 +44,7 @@ class RepositoryMetadataTest(unittest.TestCase):
         content = README.read_text(encoding="utf-8")
 
         expected_test_entries = [
+            "test_create_delivery_notes.py",
             "test_create_producer_brief.py",
             "test_example_briefs.py",
             "test_repository_metadata.py",

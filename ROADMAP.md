@@ -5,7 +5,7 @@ This roadmap keeps the project focused on practical accompaniment work rather th
 ## Near term
 
 - Add more example briefs across pop, R&B, hip-hop, singer-songwriter, and sync-bed use cases.
-- Add a delivery-notes helper for Logic import instructions.
+- Expand delivery-notes templates for more handoff formats.
 - Add a stem package checklist template.
 - Improve tests around generated brief formatting.
 - Add GitHub topics and a clearer repository description.
