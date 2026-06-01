@@ -30,6 +30,7 @@ The stable surface today is:
 - the Codex skill definition in [SKILL.md](SKILL.md)
 - producer-intake and arrangement references
 - repeatable producer-brief generation through [scripts/create_producer_brief.py](scripts/create_producer_brief.py)
+- repeatable Logic handoff notes through [scripts/create_delivery_notes.py](scripts/create_delivery_notes.py)
 - documentation for realistic Logic Pro handoff boundaries
 
 The next maturity target is to grow this into a small, well-tested skill package with more genre examples, packaging helpers, and maintainer-friendly issue triage.
@@ -130,8 +131,10 @@ logic-loop-arranger-skill/
 │   ├── intake-patterns.md
 │   └── logic-automation-limits.md
 ├── scripts/
+│   ├── create_delivery_notes.py
 │   └── create_producer_brief.py
 ├── tests/
+│   ├── test_create_delivery_notes.py
 │   ├── test_create_producer_brief.py
 │   ├── test_example_briefs.py
 │   └── test_repository_metadata.py
@@ -191,6 +194,23 @@ python3 scripts/create_producer_brief.py \
   --out producer-brief.txt
 ```
 
+## Logic delivery notes helper
+
+Use the delivery notes helper when you need a Logic-friendly handoff note for stems, section timing, and import boundaries:
+
+```bash
+python3 scripts/create_delivery_notes.py \
+  --title "Night Drive Demo" \
+  --tempo "92-98 BPM" \
+  --key "D minor" \
+  --section "Intro: 0:00-0:08, keys and texture only" \
+  --section "Hook: 0:33-0:49, wider drums and bass commitment" \
+  --stem "Night Drive Demo - Drums.wav" \
+  --stem "Night Drive Demo - Bass.wav" \
+  --stem "Night Drive Demo - Music.wav" \
+  --out logic-delivery-notes.md
+```
+
 ## Development checks
 
 Run the local checks before opening a pull request:
@@ -228,6 +248,9 @@ The repository includes the standard OSS project docs expected by contributors a
 
 - [scripts/create_producer_brief.py](scripts/create_producer_brief.py)
   A small helper for turning a locked direction into a reusable brief file
+
+- [scripts/create_delivery_notes.py](scripts/create_delivery_notes.py)
+  A small helper for turning section maps and stem expectations into Logic handoff notes
 
 ## Design principles
 

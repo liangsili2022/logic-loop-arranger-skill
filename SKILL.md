@@ -146,6 +146,8 @@ Recommended output naming:
 
 If exporting stems, align them from 0:00 and make them full song length.
 
+Use [scripts/create_delivery_notes.py](scripts/create_delivery_notes.py) when you need a repeatable Markdown note for section timing, stem naming, Logic import notes, and automation boundaries.
+
 ## Interaction style
 
 Your questions should sound like a top producer narrowing taste, not a form.
@@ -173,4 +175,5 @@ If you need bundled resources:
 - read [references/intake-patterns.md](references/intake-patterns.md) for question framing
 - read [references/logic-automation-limits.md](references/logic-automation-limits.md) before UI scripting inside Logic Pro
 - use [scripts/create_producer_brief.py](scripts/create_producer_brief.py) when you want to turn a locked direction into a reusable brief artifact
+- use [scripts/create_delivery_notes.py](scripts/create_delivery_notes.py) when you want to generate a Logic handoff note for stems and import prep
 - use [examples/example-briefs.md](examples/example-briefs.md) when you need sample direction patterns or example outcomes
