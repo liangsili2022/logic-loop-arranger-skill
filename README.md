@@ -132,7 +132,9 @@ logic-loop-arranger-skill/
 ├── scripts/
 │   └── create_producer_brief.py
 ├── tests/
-│   └── test_create_producer_brief.py
+│   ├── test_create_producer_brief.py
+│   ├── test_example_briefs.py
+│   └── test_repository_metadata.py
 ├── CHANGELOG.md
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
@@ -197,6 +199,17 @@ Run the local checks before opening a pull request:
 python3 -m compileall scripts tests
 python3 -m unittest discover -s tests
 ```
+
+## Maintainer docs
+
+The repository includes the standard OSS project docs expected by contributors and downstream users:
+
+- [CONTRIBUTING.md](CONTRIBUTING.md)
+- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
+- [SECURITY.md](SECURITY.md)
+- [CHANGELOG.md](CHANGELOG.md)
+- [ROADMAP.md](ROADMAP.md)
+- [PROMOTION.md](PROMOTION.md)
 
 ## Bundled assets
 

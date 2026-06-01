@@ -13,10 +13,12 @@ This project follows a lightweight changelog format while it is pre-1.0.
 - CI workflow for Python compile checks and unit tests.
 - Unit test coverage for the producer brief helper.
 - Genre-specific example briefs for singer-songwriter, sync-bed, trap-pop, and upbeat pop/R&B accompaniment workflows.
+- Repository metadata tests that verify expected OSS docs exist and stay linked from the README.
 
 ### Changed
 
 - Expanded README with project status, development checks, and maintainer links.
+- Corrected the repository layout example to reflect the full local test suite.
 
 ## 0.1.0 - 2026-03-29
 
