@@ -5,8 +5,13 @@ All notable changes to this project will be documented here.
 This project follows a lightweight changelog format while it is pre-1.0.
 
 ## Unreleased
+### Added
 
-No unreleased changes yet.
+- Expanded regression tests for producer brief and Logic delivery note formatting, including repeated CLI arguments and fallback sections.
+
+### Changed
+
+- Documented the stable output contract for helper-generated briefs and delivery notes in README.
 
 ## 0.2.0 - 2026-06-01
 

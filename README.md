@@ -197,6 +197,8 @@ python3 scripts/create_producer_brief.py \
   --out producer-brief.txt
 ```
 
+The generated brief always writes `Title:` then `Brief:` followed by the core fields in a fixed order. `--references` is optional and only appears when you pass it.
+
 ## Logic delivery notes helper
 
 Use the delivery notes helper when you need a Logic-friendly handoff note for stems, section timing, and import boundaries:
@@ -213,6 +215,8 @@ python3 scripts/create_delivery_notes.py \
   --stem "Night Drive Demo - Music.wav" \
   --out logic-delivery-notes.md
 ```
+
+The generated note keeps a fixed section order: `Session`, `Section Map`, `Stem Naming`, `Logic Import Notes`, and `Automation Boundaries`. Repeated `--section`, `--stem`, and `--note` arguments are preserved in the order provided.
 
 ## Development checks
 
